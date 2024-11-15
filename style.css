@@ -67,23 +67,40 @@ main {
     padding: 10px;
     box-shadow: 0px 0px 200px 7px rgba(73, 63, 100, 0.8);
 }
+
+.imgmain img {
+    width: 90px;
+    margin: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(73, 63, 100, 0.8);
+    border-radius: 4px;
+}
 .firstimg {
     height: auto;
     position: relative;
     bottom: 50px
 }
-main input {
-    border-radius: 30px;
-    border: none;
-    box-shadow: 0px 4px 4px 0px rgba(73, 63, 100, 0.8);
-    outline: none;
+.welcome {
     position: relative;
-    bottom: 50px;
-    height: 30px;
-    background: rgb(230, 219, 219);
-    color: black;
-    padding: 12px;
-    margin: 20px;
+    background-color: #f8eded;
+    border-radius: 4px;
+    padding: 5px;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: -20px;
+    margin-top: 20px
+}
+.welcom1 {
+    display: inline-block;
+    animation: geser 5s linear infinite;
+
+}
+@keyframes geser {
+    0% {
+        transform: translateX(1830%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 .firstimg img {
     border-radius: 50%;
@@ -214,7 +231,10 @@ main p {
         left: -20px;
     }
     .galeri {
-        transform: translateY(50px);
+        transform: translateY(20px);
     }
-    
+    .imgmain img{
+        width: 50px;
+        margin: 30px
+    }
 }
