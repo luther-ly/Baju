@@ -214,8 +214,7 @@ main p {
         left: -20px;
     }
     .galeri {
-        position: relative;
-        margin-top: 20px;
+        transform: translateY(20px);
     }
     
 }
