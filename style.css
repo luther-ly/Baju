@@ -185,7 +185,7 @@ main p {
     opacity: 1;
     transform: translateX(0);
 }
-@media (max-width: 728px) {
+@media (max-width: 600px) {
     nav img {
         width: 20px;
     }
@@ -208,9 +208,14 @@ main p {
     main h1 {
         font-size: 20px;
     }
-    .img img {
+   
+    .img {
         position: relative;
-        float: right;
+        left: -20px;
+    }
+    .galeri {
+        position: relative;
+        margin-top: 20px;
     }
     
 }
