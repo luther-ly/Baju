@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <img src="logo.png" alt="logo"><b>Nama Perusahaan</b>
+        <button><a href="#">My Order</a></button>
+        <button><a href="#">Contact</a></button>
+        <button><a href="#">Galery</a></button>
+        <button><a href="#">About Us</a></button>
+    </nav>
+    <div class="container">
+         <main>
+            <h1>Get Your Style Now</h1>
+            <div class="firstimg">
+                <img src="logo.png" alt="">
+            </div>
+            <input type="search" placeholder="Searching">
+            <p>The clothes of your dreams, made with a touch of skilled craftsmanship. <br>Create a more perfect appearance with custom tailoring that suits your style and body shape!</p>
+        </main>
+        <div class="main1">
+            <h1 class="h1">Get your various styles</h1>
+            <div class="img left"><img src="png-clipart-paper-wall-decal-sticker-color-orange-batik-white-leaf.png" alt="" class="img1"></div>
+            <div class="img right"><img src="png-clipart-paper-wall-decal-sticker-color-orange-batik-white-leaf.png" alt="" class="img2"></div>
+            <div class="img left"><img src="png-clipart-paper-wall-decal-sticker-color-orange-batik-white-leaf.png" alt="" class="img3"></div>
+            <div class="galeri"><button>Galery ▶</button></div>
+        </div>
+    </div>
+
+    <script>
+        const cards = document.querySelectorAll('.img');
+
+        window.addEventListener('scroll', () => {
+            cards.forEach(card => {
+                const cardPosition = card.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+        
+                if (cardPosition < screenPosition) {
+                    card.classList.add('show');
+                }
+            });
+        });
+
+        const ha1 = document.querySelectorAll('.h1');
+
+        window.addEventListener('scroll', () => {
+            ha1.forEach(card => {
+                const h1Position = card.getBoundingClientRect().top;
+                const ha1Position = window.innerHeight / 1.3;
+        
+                if (h1Position < ha1Position) {
+                    card.classList.add('shiw');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
