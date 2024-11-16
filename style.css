@@ -176,10 +176,9 @@ main p {
 }
 
 .galeri button a {
-    border: none;
-    background: none;
     box-shadow: 0px 4px 4px 0px rgba(73, 63, 100, 0.8);
     padding: 8px;
+    border-radius: 2px
     font-weight: bold;
     background-color: #5f1919;
     color: white;
