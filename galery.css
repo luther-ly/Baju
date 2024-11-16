@@ -164,7 +164,7 @@ footer {
     align-items: center;
     margin-bottom: 20px;
     justify-content: center;
-    z-index: 0;
+    z-index: -1;
 }
 footer p {
     position: relative;
