@@ -175,7 +175,7 @@ main p {
     float: left;
 }
 
-.galeri button {
+.galeri button a {
     border: none;
     background: none;
     box-shadow: 0px 4px 4px 0px rgba(73, 63, 100, 0.8);
