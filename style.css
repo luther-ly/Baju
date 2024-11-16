@@ -186,10 +186,10 @@ main p {
     transition: 0.2s ease-in;
     cursor: pointer;
 }
-.galeri button:hover{
+.galeri button a:hover{
     background-color: rgb(89, 89, 175);
 }
-.galeri button:active {
+.galeri button a:active {
     transform: scale(0.95);
 }
 
