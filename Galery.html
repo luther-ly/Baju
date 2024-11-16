@@ -27,7 +27,7 @@
              </div>
              <div class="img">
                 <img src="IMG-20241115-WA0027.jpg" alt="">
-                <button onclick="showDetails('IMG-20241115-WA0027.jpg')">Chek</button>
+                <button onclick="showDetails('IMG-20241115-WA0028.jpg')">Chek</button>
              </div>
              <div class="img">
                 <img src="IMG-20241115-WA0029.jpg" alt="">
@@ -370,6 +370,11 @@
                 <img id="show-img" src="" alt="">
                 <button id="order-button" onclick="sendToWhatsApp()" class="order-button">Pesan Sekarang ▶</button>
             </div>
+        </main>
+    </div>
+            <footer>
+                <p>Follow Us On  <a href="https://www.instagram.com/seniman_taylor/profilecard/?igsh=bjhkN2g1Mnc5emNs"><img src="instagram.png" alt=""></a></p>
+            </footer>
             
             <script>
                 // Fungsi untuk menampilkan gambar dan detail
@@ -387,7 +392,7 @@
                     closebtn.style.display = "none"; // Sembunyikan kontainer
                 }
             
-                const nomerWa = "6283851904981"; // Nomor WhatsApp
+                const nomerWa = "085262645595"; // Nomor WhatsApp
             
                 // Fungsi untuk mengirim pesan ke WhatsApp
                 function sendToWhatsApp() {
@@ -396,7 +401,7 @@
                     const imgSrc = showImg.src; // Dapatkan URL gambar
             
                     // Buat pesan yang akan dikirim
-                   const Pesan = imgSrc ? `Hallo, Saya Ingin Memesan Baju Ini: ${imgSrc}` : `Hallo, Saya Ingin Memesan Baju Ini.`;
+                    const Pesan = `Hallo Saya Ingin Memesan Baju Ini: %0A%0A${imgSrc}`;
             
                     // Buat URL WhatsApp dengan pesan yang sudah di-encode
                     const whatsAppURL = `https://wa.me/${nomerWa}?text=${encodeURIComponent(Pesan)}`;
@@ -405,4 +410,8 @@
                     window.open(whatsAppURL, "_blank");
                 }
             </script>
+</body>
+</html>
+
+            
             
