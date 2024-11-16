@@ -232,6 +232,7 @@ main p {
     }
     .galeri {
         transform: translateY(20px);
+        margin-top: 20px;
     }
     .imgmain img{
         width: 50px;
