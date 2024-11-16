@@ -48,7 +48,7 @@ nav {
     animation: geser 8s linear infinite;
 }
 main {
-    position: relative;
+    position: absolute;
     width: 90%;
     background-color: white;
     border-radius: 10px;
