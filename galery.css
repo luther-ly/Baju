@@ -15,6 +15,7 @@ nav img {
     margin-top: 8px;
 }
 nav {
+    max-width: 90%;
     color:rgb(207, 210, 241);
     font-weight: bold;
     top: 0;
@@ -29,7 +30,6 @@ nav {
     z-index: 3;
 }
 .animation {
-    max-width: 90%;
     background: white;
     margin-top: 10px;
     padding: 7px;
@@ -40,6 +40,10 @@ nav {
 .tex-animation{
     font-weight: bold;
     padding: 4px;
+    justify-content: end;
+    text-align: end;
+    position: relative;
+    left: 120px;
     animation: geser 8s linear infinite;
 }
 main {
@@ -151,7 +155,7 @@ button {
 }
 @keyframes geser {
     0% {
-        transform: translateX(50%);
+        transform: translateX(0%);
     }
     100% {
         transform: translateX(-100%);
