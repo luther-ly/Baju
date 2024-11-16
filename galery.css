@@ -43,7 +43,8 @@ nav {
     justify-content: end;
     text-align: end;
     position: relative;
-    left: 120px;
+    justify-content: end;
+    align-items: end;
     animation: geser 8s linear infinite;
 }
 main {
