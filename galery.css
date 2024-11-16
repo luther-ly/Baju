@@ -161,5 +161,15 @@ button {
         position: relative;
         left: 35px;
     }
+    @media (max-width: 700px){
+    main h1 {
+        position: relative;
+        left: 35px;
+    }
+    #show img {
+        width: 100px;
+        height: 300px;
+    }
+}
 }
     
