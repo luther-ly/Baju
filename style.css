@@ -231,7 +231,7 @@ main p {
         left: -20px;
     }
     .galeri {
-        transform: translateY(40px);
+        transform: translateY(60px);
     }
     .imgmain img{
         width: 50px;
