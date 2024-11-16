@@ -396,7 +396,7 @@
                     const imgSrc = showImg.src; // Dapatkan URL gambar
             
                     // Buat pesan yang akan dikirim
-                    const Pesan = `Hallo Saya Ingin Memesan Baju Ini:${showImg}`;
+                   const Pesan = imgSrc ? `Hallo, Saya Ingin Memesan Baju Ini: %0A%0A${imgSrc}` : `Hallo, Saya Ingin Memesan Baju Ini.`;
             
                     // Buat URL WhatsApp dengan pesan yang sudah di-encode
                     const whatsAppURL = `https://wa.me/${nomerWa}?text=${encodeURIComponent(Pesan)}`;
