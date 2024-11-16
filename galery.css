@@ -154,6 +154,24 @@ button {
 #show .order-button:hover {
     background-color: #00f721;
 }
+footer {
+    display: flex;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+footer p {
+    position: relative;
+    bottom: 10px;
+}
+footer img {
+    width: 30px;
+    position: relative;
+    top: 8px;
+}
 @keyframes geser {
     0% {
         transform: translateX(0%);
