@@ -201,6 +201,8 @@ footer img {
         width: 200px;
         height: 350px;
     }
+   main {
+       height: 100vh;
 }
 }
     
