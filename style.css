@@ -18,7 +18,7 @@ nav {
 }
  nav b {
     position: relative;
-    top: -9px;
+    top: -4px;
     box-shadow: 0px 4px 4px 0px rgba(251, 251, 255, 0.185);
 }
 nav img {
@@ -124,6 +124,7 @@ main p {
     bottom: 100px;
     font-size: 15px;
     text-align: left;
+    margin-bottom: 40px;
 }
 .img img {
     left: 0;
