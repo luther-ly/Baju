@@ -14,6 +14,18 @@
     <div class="animation">
         <div class="tex-animation">Selamat Memilih</div>
     </div>
+    <div class="real">
+        <div class="container-slide">
+            <div class="slide-container">
+                <div class="slide"><img src="IMG-20241115-WA0032.jpg" alt="Slide 1"></div>
+                <div class="slide"><img src="IMG-20241115-WA0066.jpg" alt="Slide 2"></div>
+                <div class="slide"><img src="IMG-20241115-WA0077.jpg" alt="Slide 3"></div>
+                <div class="slide"><img src="IMG-20241115-WA0099.jpg" alt="Slide 4"></div>
+                <div class="slide"><img src="" alt="Slide 5"></div>
+            </div>
+        </div>
+        
+    </div>
     <div class="container">
         <main>
             <h1>Galery Inspirasi Model Baju</h1>
@@ -407,6 +419,61 @@
                     // Buka WhatsApp dengan URL yang telah dibuat
                     window.open(whatsAppURL, "_blank");
                 }
+
+                const slideContainer = document.querySelector('.slide-container'); // Kontainer yang bergerak
+const items = document.querySelectorAll('.slide'); // Semua slide
+const totalItems = items.length; // Jumlah slide
+const indicatorContainer = document.createElement('div'); // Kontainer indikator
+indicatorContainer.classList.add('indicator-container');
+document.querySelector('.container-slide').appendChild(indicatorContainer); // Tambahkan ke container
+
+let index = 0;
+
+// Buat indikator secara dinamis
+for (let i = 0; i < totalItems; i++) {
+    const indicator = document.createElement('span');
+    indicator.classList.add('indicator');
+    if (i === 0) indicator.classList.add('active'); // Slide pertama aktif
+    indicatorContainer.appendChild(indicator);
+
+    // Event untuk klik indikator
+    indicator.addEventListener('click', () => goToSlide(i));
+}
+
+// Fungsi untuk menggeser ke slide berikutnya
+function geserSlide() {
+    index++;
+    if (index >= totalItems) {
+        index = 0; // Kembali ke slide pertama
+    }
+    trackSlide();
+}
+
+// Fungsi untuk berpindah ke slide tertentu
+function goToSlide(slideIndex) {
+    index = slideIndex;
+    trackSlide();
+}
+
+// Fungsi untuk memperbarui posisi slide dan indikator
+function trackSlide() {
+    const cslide = -index * 100; // Hitung posisi slide
+    slideContainer.style.transform = `translateX(${cslide}%)`; // Geser slide
+
+    // Perbarui indikator
+    const indicators = document.querySelectorAll('.indicator');
+    indicators.forEach((indicator, i) => {
+        if (i === index) {
+            indicator.classList.add('active');
+        } else {
+            indicator.classList.remove('active');
+        }
+    });
+}
+
+// Interval otomatis untuk geser slide setiap 3 detik
+setInterval(geserSlide, 3000);
+
             </script>
 </body>
 </html>
