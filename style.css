@@ -68,13 +68,15 @@ main {
     padding: 10px;
     box-shadow: 0px 0px 200px 7px rgba(73, 63, 100, 0.8);
 }
-
+main p {
+top : 80px;
 .imgmain img {
     width: 90px;
     margin: 20px;
     box-shadow: 0px 4px 4px 0px rgba(73, 63, 100, 0.8);
     border-radius: 4px;
 }
+
 .firstimg {
     height: auto;
     position: relative;
