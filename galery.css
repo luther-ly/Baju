@@ -178,7 +178,7 @@ button {
 }
 #show {
     position: fixed;
-    top: -24px;
+    top: 20px;
     height: 550px;
     z-index: 3;
     border: 1px solid;
